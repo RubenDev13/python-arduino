@@ -25,7 +25,7 @@ def enviar_comando(arduino, comando: str):
         print("[ADVERTENCIA] Arduino no está conectado.")
         return
 
-    texto = comando.strip() + '\n'
+    texto = comando.strip() + '\n' 
     arduino.write(texto.encode('utf-8'))
     print(f"→ Enviado a Arduino: {comando}")
 

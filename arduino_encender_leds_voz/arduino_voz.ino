@@ -11,7 +11,7 @@ const int LED_AZUL  = 10;
 String comando = "";
 
 void setup() {
-  pinMode(LED_ROJO, OUTPUT);
+  pinMode(LED_ROJO, OUTPUT); 
   pinMode(LED_VERDE, OUTPUT);
   pinMode(LED_AZUL, OUTPUT);
 

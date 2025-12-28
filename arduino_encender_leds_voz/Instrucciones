@@ -3,7 +3,7 @@ Copia esto en el cmd (simbolo del sistema)       pip install SpeechRecognition p
 
 Lo segundo tienes que abrir el fichero "arduino_voz.ino" en tu Ardiono IDE
 En las líneas 8, 9 y 10 tienes que poner los pines que vas a usar tu. Mira bien que pongas el pin del ROJO al pin que has
-puesto el LED ROJO, porque si no se encendera otro.
+puesto el LED ROJO, porque si no se encendera otro. 
 
 Ahora abre el fichero "arduino_voz.py", este es el que hará toda la lógica del programa.
 En la linea 7 tienes que poner el puerto de tu arduino, si no sabes cual es, ves a Arduino IDE y en la parte superior lo pondrá. 
