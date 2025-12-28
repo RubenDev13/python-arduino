@@ -1,0 +1,22 @@
+Lo primero te vas a tener que instalar librerias.
+Copia esto en el cmd (simbolo del sistema)       pip install SpeechRecognition pyaudio pyserial
+
+Lo segundo tienes que abrir el fichero "arduino_voz.ino" en tu Ardiono IDE
+En las líneas 8, 9 y 10 tienes que poner los pines que vas a usar tu. Mira bien que pongas el pin del ROJO al pin que has
+puesto el LED ROJO, porque si no se encendera otro.
+
+Ahora abre el fichero "arduino_voz.py", este es el que hará toda la lógica del programa.
+En la linea 7 tienes que poner el puerto de tu arduino, si no sabes cual es, ves a Arduino IDE y en la parte superior lo pondrá. 
+De la línea 62 a la 92 te pone los comando que tienes que decir para que haga las acciones. Por ejemplo:
+
+if "rojo" in t:
+        if "enciende" in t or "prender" in t:
+            enviar_comando(arduino, "ROJO_ON")
+            return
+        if "apaga" in t:
+            enviar_comando(arduino, "ROJO_OFF")
+            return
+
+Si dices "enciende rojo" o "prender rojo" te hrá caso, si dices "encender rojo" u otra cosa no te hará nada. Si quieres para probar y practicar un poco cambiale el comando y así cacharreas.
+
+Para ejecutar los dos ficheros, abre Arduino IDE y subes el codigo de arduino. Y para ejecutar el de python simplemente haz doble click en el fichero y debería funcionar.
